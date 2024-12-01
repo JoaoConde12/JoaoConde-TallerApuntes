@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="JoaoConde_TallerApuntes.NotePage"
+             x:Class="JoaoConde_TallerApuntes.Views.NotePage"
              Title="Nota">
     <VerticalStackLayout>
         <Editor x:Name="TextEditor"
                 Placeholder="Ingresa una nota"
+                Text="{Binding Text}"
                 HeightRequest="100" />
 
         <Grid ColumnDefinitions="*,*" ColumnSpacing="4">
