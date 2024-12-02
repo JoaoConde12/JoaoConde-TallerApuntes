@@ -7,17 +7,51 @@
     <ContentPage.BindingContext>
         <models:About />
     </ContentPage.BindingContext>
-    
-    <VerticalStackLayout Spacing="10" Margin="10">
-        <HorizontalStackLayout Spacing="10">
-            <Image Source="dotnet_bot.png"
-                       SemanticProperties.Description="The dot net bot waving hello!"
-                       HeightRequest="64" />
-            <Label FontSize="22" FontAttributes="Bold" Text="{Binding Title}" VerticalOptions="End" />
-            <Label FontSize="22" Text="{Binding Version}" VerticalOptions="End" />
-        </HorizontalStackLayout>
 
-        <Label Text="{Binding Message}" />
-        <Button Text="Learn more..." Clicked="LearnMore_Clicked" />
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout Margin="10" Spacing="20">
+
+            <Label 
+                FontSize="22" 
+                FontAttributes="Bold" 
+                Text="Un poco sobre Joao Conde"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                />
+
+            <Label 
+                Margin="0"
+                FontSize="18" 
+                Text="Mi nombre es Joao Conde, soy de la ciudad de Santo Domingo, tengo 22 años (casi 23). Actualmente estoy estudiando la carrera de ingeniería de software en la Universidad de las Américas (UDLA). Me gusta jugar fútbol, mi sueño de niño era ser futbolista, lamentablemente no se dio. Aún así me permitió aprender muchas cosas y actualmente soy muy feliz estudiando esta carrera."
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                LineBreakMode="WordWrap"
+                />
+
+            <Label 
+                Margin="0, 20, 0, 0"
+                FontSize="22" 
+                FontAttributes="Bold" 
+                Text="Ícono que me representa"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                />
+
+            <Image Source="icon_software.png"
+                   HorizontalOptions="Center" />
+
+            <Label 
+                Margin="0, 20, 0, 0"
+                FontSize="22" 
+                FontAttributes="Bold" 
+                Text="Meme que pidió el profe"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                />
+
+            <Image Source="icon_meme.jpg"
+                   HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
